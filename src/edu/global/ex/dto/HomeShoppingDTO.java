@@ -10,6 +10,7 @@ public class HomeShoppingDTO {
 	private Date joindate;
 	private String grade;
 	private String city;
+	private long	price;
 	
 	public HomeShoppingDTO() {}
 	
@@ -65,6 +66,14 @@ public class HomeShoppingDTO {
 	}
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	public long getPrice() {
+		return price;
+	}
+
+	public void setPrice(long price) {
+		this.price = price;
 	}
 	
 	
