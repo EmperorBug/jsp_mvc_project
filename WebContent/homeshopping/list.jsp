@@ -30,7 +30,17 @@
 					<td>${ item.phone }</td>
 					<td>${ item.address }</td>
 					<td>${ item.joindate }</td>
-					<td>${ item.grade }</td>
+					<c:choose>
+						<c:when test="${item.grade == 'A' }">
+							<td>VIP</td>
+						</c:when>
+						<c:when test="${item.grade == 'B' }">
+							<td>일반</td>
+						</c:when>
+						<c:when test="${item.grade == 'C' }">
+							<td>직원</td>
+						</c:when>
+					</c:choose>
 					<td>${ item.city }</td>
 				</tr>
 			</c:forEach>

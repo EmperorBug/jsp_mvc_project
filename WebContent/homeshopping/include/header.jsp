@@ -34,8 +34,12 @@
 	
 	section {
 		width: 100vw;
-		height : 70vh;
+		height : 65vh;
 	
+	}
+	
+	table {
+		top : 3em;
 	}
 </style>
 </head>

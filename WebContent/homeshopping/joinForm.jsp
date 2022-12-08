@@ -61,7 +61,7 @@
 			const dateregx = /(19[0-9]{2}|20[0-9]{2})(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])/;
 			const phoneregx = /^\d{3}-\d{3,4}-\d{4}$/;
 			const graderegx = /^[A,B,C]$/;
-			const cityregx	= /^\d{2}%/;
+			const cityregx	= /^\d{2}$/;
 			
 			if (form.custname.value == '' ) {
 				alert('회원성명이 입력되지않았습니다.');

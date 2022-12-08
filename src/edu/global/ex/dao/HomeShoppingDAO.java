@@ -39,7 +39,7 @@ public class HomeShoppingDAO {
 		PreparedStatement preparedStatement = null;
 		ResultSet	rs	=	null;
 		try {
-			String query= "select * from member_tbl_02";
+			String query= "select * from member_tbl_02 order by custno";
 			connection = dataSource.getConnection();
 			preparedStatement = connection.prepareStatement(query);
 			rs = preparedStatement.executeQuery();
